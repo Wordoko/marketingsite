@@ -1,0 +1,62 @@
+---
+layout: default
+title: Home
+---
+
+<header class="clean" style="height: 540px; background-image: url({{ site.cover }});">
+	{% include top.html %}
+	<div id="home-title">
+		<a href="{{ site.url }}">
+			<img src="{{ site.icon }}" class="site-icon">
+		</a>
+		<h1>Play Wordoko. Learn Japanese.</h1>
+		<img class="img-responsive" src="assets/images/app-store_badge.png">
+	</div>
+</header>
+<header class="clean" style="height: 840px; padding-top:60px">
+	<div id="about">
+		<h1 class="about">Exercise Your Knowledge Of Japanese Writing Systems.</h1>
+		<div style="width: 50%; float:left; padding-top:30px">
+   			<img class="img-responsive about" src="assets/images/iphone5.gif" width='280'>
+		</div>
+		<div style="width: 50%; float:right; padding-top:30px">
+   		
+		</div>
+			<p class="about">Learn Kanji Easily</p>
+			<p class="about">Worko is a revolutionary platform to help Japanese Language Learners master kana and kanji. There are 3 character sets in Japanese; kanji, hiragana, and katakana. Wordoko familiarizes you with all 3 via a simple puzzle game. Using a word search design Workoko helps learners of all skill levels practice and learn hiragana, kanji and katakana.</p>
+
+			<p class="about">Kanji can be difficult to learn even for native speakers. Wordoko helps learners who have an understanding of hiragana and katakana can easily learn kanji. The game is presented as a word search with the word bank presented in one character set and the search area presented in another.</p>	
+
+			<div>
+			{% for social in site.social %}
+				<a href="{{ social.url }}" target="_blank" title="{{ social.desc }}" style="color:#515151"><span class="genericon genericon-{{ social.icon }}"></span></a>
+			{% endfor %}
+			</div>
+	</div>
+</header>
+<div id="post-list">
+	{% for post in paginator.posts %}
+		<div>
+			<span class="post-date">{{ post.date | date_to_long_string }}</span>
+			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+			<p class="post-description">{{ post.content | strip_html | truncatewords: 50 }}</p>
+		</div>
+		<br>
+	{% endfor %}
+</div>
+<nav class="pagination" role="navigation">
+	{% if paginator.next_page %}
+		<a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
+	{% endif %}
+	<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+	{% if paginator.previous_page %}
+		{% if paginator.page == 2 %}
+			<a class="older-posts" href="/">Newer posts &rarr;</a>
+		{% else %}
+			<a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+		{% endif %}
+	{% endif %}
+</nav>
+<footer class="clean" style="background-image: url({{ site.cover }}); background-position: bottom; height: 60px;">
+	<p class="copyright">&copy;{{ site.time | date: "%Y" }}, <a href="{{ site.copyright.url }}" target="_blank">{{ site.copyright.author }}</a>. <a href="{{ site.copyright.type_url }}" target="_blank">{{ site.copyright.type_title }}</a>.</p>
+</footer>
