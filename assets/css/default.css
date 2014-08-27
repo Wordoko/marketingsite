@@ -44,6 +44,9 @@ p {
 p.about {
 	margin-right: 20%;
 	line-height: 1.5;
+	color: #777;
+	font-size: 13pt;
+	font-family: "PT Serif", Georgia, "Times New Roman", serif;
 }
 
 a {
@@ -132,6 +135,7 @@ img.site-icon {
 	margin-top: -75px;
 	width: 150px;
 	height: 150px;
+	transition-duration: .25s;
 	opacity: .9;
 }
 
@@ -139,7 +143,6 @@ img.site-icon {
 img.site-icon-small {
 	width: 28px;
 	height: 28px;
-	border-radius: 50%;
 	vertical-align: middle;
 	margin-right: 10px;
 }
@@ -149,7 +152,6 @@ img.site-icon-page {
 	height: 100px;
 	margin-left: -40px;
 	margin-top: -120px;
-	border-radius: 50%;
 	position: absolute;
 }
 
@@ -299,7 +301,6 @@ pre code {
 
 .clean {
 	color: #eee;
-	background-color: #ffffff;
 }
 
 .clean a {

@@ -10,14 +10,15 @@ title: Home
 			<img src="{{ site.icon }}" class="site-icon">
 		</a>
 		<h1>Play Wordoko. Learn Japanese.</h1>
-		<img class="img-responsive" src="assets/images/app-store_badge.png">
+		<a href="https://itunes.apple.com/us/app/wordoko/id904631100?ls=1&mt=8">
+		<img class="img-responsive" src="assets/images/app-store_badge.png"></a>
 	</div>
 </header>
-<header class="clean" style="height: 840px; padding-top:60px">
+<header class="clean" style="height: 860px; padding-top:60px">
 	<div id="about">
 		<h1 class="about">Exercise Your Knowledge Of Japanese Writing Systems.</h1>
 		<div style="width: 50%; float:left; padding-top:30px">
-   			<img class="img-responsive about" src="assets/images/iphone5.gif" width='280'>
+   			<img class="img-responsive about" src="assets/images/iphone5.gif" width='320'>
 		</div>
 		<div style="width: 50%; float:right; padding-top:30px">
    		
@@ -32,8 +33,10 @@ title: Home
 				<a href="{{ social.url }}" target="_blank" title="{{ social.desc }}" style="color:#515151"><span class="genericon genericon-{{ social.icon }}"></span></a>
 			{% endfor %}
 			</div>
+
 	</div>
 </header>
+<hr>
 <div id="post-list">
 	{% for post in paginator.posts %}
 		<div>

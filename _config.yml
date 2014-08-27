@@ -7,15 +7,15 @@ permalink:	/blog/:title
 
 # Setup
 title:		Wordoko
-tagline:	Play Wordoko. Learn Japanese.
-description:	 'Wordoko site.'
+tagline:	'Play Wordoko. Learn Japanese.'
+description:	'Wordoko site.'
 url:		http://wordoko.com
 
 author:
   name:		'Juan Lazo'
   url:		
 
-paginate:	5o
+paginate:	5
 
 # Custom vars
 icon:		/assets/images/icon.png
@@ -23,15 +23,15 @@ cover:		/assets/images/cover.jpg
 
 social:
   - icon:	twitter
-    url:	https://twitter.com/iancamporez
-    desc:	Wordoko on Twitter
+    url:	https://twitter.com/
+    desc:	Wordoko on twitter
 
-  - icon:	facebook
-    url:	https://facebook.com/camporez
-    desc:	Wordoko on Facebook
+  - icon:	facebook-alt
+    url:	https://github.com/
+    desc:	Wordoko on facebook
 
   - icon:	googleplus-alt
-    url:	https://google.com/+IanCamporezBrunelli
+    url:	https://google.com/
     desc:	Wordoko on google+
 
     
@@ -43,7 +43,7 @@ menu:
     url:	/about
     
 copyright:
-  author:	Juan Lazo
-  url:		
+  author:	Wordoko
+  url:		http://wordoko.com
   type_title:	Some rights reserved
   type_url:	http://creativecommons.org/licenses/by-nc/2.5
